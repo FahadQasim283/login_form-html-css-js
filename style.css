@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --white: white;
+  --white2: rgb(183, 200, 199);
+  --black: rgb(38, 39, 44);
+  --black-dark: rgb(0, 0, 0);
+  --blue: rgba(19, 28, 76, 0.74);
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  width: 30%;
+  background-color: var(--black-dark);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px var(--blue);
+  color: var(--white2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.loginForm .input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+}
+
+.loginForm .input-fields input {
+  margin: 10px 0px;
+  height: 30px;
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.loginForm .input-fields input:hover {
+  box-shadow: 0px 0px 10px #1c1b1b;
+  transition: ease-in;
+  transition: ease-in 300ms;
+  transform: scale(1.05);
+  border-color: transparent;
+  background-color: var(--white2);
+  box-shadow: 2px 2px 5px black inset;
+  outline: none;
+}
+
+.loginForm .input-fields input:not(:hover) {
+  transition: 500ms;
+}
+
+.loginForm .button {
+  width: 80%;
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 16px;
+}
+.loginForm .button button {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 80%;
+  font-size: 16px;
+}
+.loginForm .button button:hover {
+  background-color: var(--black-dark);
+  box-shadow: 0px 0px 8px blue;
+  color: var(--white);
+}
+
+.loginForm .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  padding-bottom: 30%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/premium-vector/luxury-logo-welcome-vintage-style_638909-271.jpg");
+}
+
+.firecontainer {
+  background: linear-gradient(white, white, white, rgb(187, 128, 18), orange);
+  padding: 10px;
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 3px;
+}
+.fire-text {
+  background-image: url(assets/fire1.gif);
+  background-size: contain;
+  font-size: 50px;
+  font-weight: 900;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fire-text:hover {
+  background-image: url(assets/fire.gif);
+  transition-duration: 2s;
+  background-size: contain;
+}
+.fire-text:not(:hover) {
+  transition-duration: 2s;
+}
